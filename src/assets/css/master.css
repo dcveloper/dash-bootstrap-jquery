@@ -1,0 +1,222 @@
+/*************************************** FONTS AND TYPE ***************************************/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../fonts/SourceSansPro-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"); }
+*, body, div, a, span, p, ul, li, strong {
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-family: "Source Sans Pro Light", sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.btn, button {
+  font-family: "Source Sans Pro Semi Bold", sans-serif; }
+
+/******************************************** COLORS ********************************************/
+/*Icon Fonts*/
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 48px;
+  color: #666666; }
+  [class^="icon-"].small-sz, [class*=" icon-"].small-sz {
+    font-size: 36px; }
+  [class^="icon-"].default-sz, [class*=" icon-"].default-sz {
+    font-size: 48px; }
+  [class^="icon-"].large-sz, [class*=" icon-"].large-sz {
+    font-size: 64px; }
+
+/*************************************** DEFAULT TEXT STYLES ***************************************/
+.page-title-container {
+  background-color: #0a2c45;
+  width: 100%;
+  display: block;
+  padding: 24px;
+  margin: 0 0 60px; }
+  .page-title-container .page-title {
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0; }
+
+.section-title {
+  font-size: 24px;
+  color: #334a6b;
+  margin: 0 0 25px; }
+
+.page-intro {
+  font-size: 18px;
+  color: #333333; }
+
+/*************************************** DEFAULT BUTTON, NAV AND ANCHOR STYLES ***************************************/
+.nav-container {
+  background-color: #0a1e37;
+  width: 100%;
+  height: 85px; }
+  .nav-container .main-nav {
+    background: #0a1e37;
+    padding-top: 30px;
+    border: none; }
+    .nav-container .main-nav .logo {
+      display: inline-block;
+      float: left;
+      background: transparent; }
+    .nav-container .main-nav ul {
+      list-style: none;
+      list-style-type: none;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      float: right; }
+      .nav-container .main-nav ul li {
+        float: left;
+        display: inline; }
+        .nav-container .main-nav ul li a {
+          color: #ffffff;
+          font-size: 18px;
+          text-transform: uppercase;
+          display: block;
+          padding: 0 13px; }
+        .nav-container .main-nav ul li button {
+          margin-top: -13px; }
+
+.btn, button {
+  background-color: #288e50;
+  border-radius: 3px;
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
+  padding: 15px 20px; }
+  .btn:hover, .btn:active, .btn:focus, button:hover, button:active, button:focus {
+    background-color: #195731;
+    color: #ffffff; }
+  .btn.ghost-button, button.ghost-button {
+    background-color: transparent;
+    color: #00709A; }
+    .btn.ghost-button:hover, .btn.ghost-button:active, .btn.ghost-button:focus, button.ghost-button:hover, button.ghost-button:active, button.ghost-button:focus {
+      background-color: transparent;
+      text-decoration: underline; }
+  .btn.clear, button.clear {
+    background-color: transparent;
+    padding: 13px 20px;
+    border: 2px solid #334a6b; }
+    .btn.clear.blue, button.clear.blue {
+      border-color: #334a6b;
+      color: #334a6b; }
+      .btn.clear.blue:hover, .btn.clear.blue:active, .btn.clear.blue:focus, button.clear.blue:hover, button.clear.blue:active, button.clear.blue:focus {
+        background-color: #334a6b;
+        color: #ffffff; }
+    .btn.clear.white, button.clear.white {
+      border-color: #ffffff;
+      color: #ffffff; }
+      .btn.clear.white:hover, .btn.clear.white:active, .btn.clear.white:focus, button.clear.white:hover, button.clear.white:active, button.clear.white:focus {
+        border: 2px solid #334a6b;
+        background-color: #334a6b; }
+  .btn.icon-button, button.icon-button {
+    background-color: transparent;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 0; }
+    .btn.icon-button.light i, button.icon-button.light i {
+      color: #ffffff; }
+    .btn.icon-button .no-text, button.icon-button .no-text {
+      display: inline-block;
+      text-indent: -20000px; }
+
+/*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
+a:focus, button:focus {
+  outline: 2px solid #00CCCC; }
+
+/************************ GLOBAL *******************************/
+@font-face {
+  font-family: 'dash-pictorials';
+  src: url("../fonts/dash-pictorials.eot?s8cruq");
+  src: url("../fonts/dash-pictorials.eot?s8cruq#iefix") format("embedded-opentype"), url("../fonts/dash-pictorials.ttf?s8cruq") format("truetype"), url("../fonts/dash-pictorials.woff?s8cruq") format("woff"), url("../fonts/dash-pictorials.svg?s8cruq#dash-pictorials") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dash-pictorials' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-close:before {
+  content: "\e900"; }
+
+.icon-cyber:before {
+  content: "\e901"; }
+
+.icon-down-arrow:before {
+  content: "\e902"; }
+
+.icon-dropdown-arrow:before {
+  content: "\e903"; }
+
+.icon-governance:before {
+  content: "\e904"; }
+
+.icon-grid:before {
+  content: "\e905"; }
+
+.icon-keyword:before {
+  content: "\e906"; }
+
+.icon-list:before {
+  content: "\e907"; }
+
+.icon-menu:before {
+  content: "\e908"; }
+
+.icon-organization:before {
+  content: "\e909"; }
+
+.icon-search-alt:before {
+  content: "\e90a"; }
+
+.icon-search:before {
+  content: "\e90b"; }
+
+.icon-star-filled:before {
+  content: "\e90c"; }
+
+.icon-star-outline:before {
+  content: "\e90d"; }
+
+.icon-sustainability:before {
+  content: "\e90e"; }
+
+.icon-topic:before {
+  content: "\e90f"; }
+
+.icon-up-arrow:before {
+  content: "\e910"; }
+
+.icon-user-icn:before {
+  content: "\e911"; }
+
+.icon-warning:before {
+  content: "\e912"; }
+
+.icon-workforce:before {
+  content: "\e913"; }

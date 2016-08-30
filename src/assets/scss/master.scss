@@ -1,0 +1,234 @@
+/*************************************** FONTS AND TYPE ***************************************/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'), url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'), url('../fonts/SourceSansPro-Bold.woff') format('woff'), url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+$source-sans-light: 'Source Sans Pro Light', sans-serif;
+$source-sans: 'Source Sans Pro', sans-serif;
+$source-sans-semi: 'Source Sans Pro Semi Bold', sans-serif;
+$source-sans-bold: 'Source Sans Pro Bold', sans-serif;
+
+$small-font-size: 12px;
+$normal-font-size: 14px;
+$medium-font-size: 16px;
+$large-font-size: 18px;
+$xlarge-font-size: 24px;
+$xxlarge-font-size: 36px;
+
+*, body, div, a, span, p, ul, li, strong {
+  font-family: $source-sans;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: $source-sans-light;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $source-sans;
+}
+
+.btn, button {
+  font-family: $source-sans-semi;
+}
+
+
+
+
+/******************************************** COLORS ********************************************/
+
+$nav-blue: #0a1e37;
+$dark-blue: #192A44;
+$bg-blue: #0a2c45;
+$medium-blue: #334a6b;
+$light-blue: #00709A;
+$dash-green: #288e50;
+$dark-green: #195731;
+$dash-red: #98452e;
+$dash-yellow: #BFAF26;
+$dark-gray: #333333;
+$accent-gray: #E5E5E5;
+$pale-gray: #f9f9f9;
+$white: #ffffff;
+$text-color-inv: #ffffff;
+$text-color: #666666;
+$focus-color: #00CCCC;
+
+
+/*Icon Fonts*/
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 48px;
+  color: $text-color;
+  &.small-sz {
+    font-size: 36px;
+  }
+  &.default-sz {
+    font-size: 48px;
+  }
+  &.large-sz {
+    font-size: 64px;
+  }
+}
+
+
+/*************************************** DEFAULT TEXT STYLES ***************************************/
+
+.page-title-container {
+  background-color: $bg-blue;
+  width: 100%;
+  display: block;
+  padding: 24px;
+  margin: 0 0 60px;
+  .page-title {
+    font-size: 36px;
+    color: $text-color-inv;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.section-title {
+  font-size: 24px;
+  color: $medium-blue;
+  margin: 0 0 25px;
+}
+
+.page-intro {
+  font-size: $large-font-size;
+  color: $dark-gray;
+}
+
+
+/*************************************** DEFAULT BUTTON, NAV AND ANCHOR STYLES ***************************************/
+
+.nav-container {
+  background-color: $nav-blue;
+  width: 100%;
+  height: 85px;
+  .main-nav {
+    background: $nav-blue;
+    padding-top: 30px;
+    border: none;
+    .logo {
+      display: inline-block;
+      float: left;
+      background: transparent;
+    }
+    ul {
+      list-style: none;
+      list-style-type: none;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      float: right;
+
+      li {
+        float: left;
+        display: inline;
+        a {
+          color: $text-color-inv;
+          font-size: $large-font-size;
+          text-transform: uppercase;
+          display: block;
+          padding: 0 13px;
+        }
+        button {
+          margin-top: -13px;
+        }
+      }
+    }
+  }
+}
+
+.btn, button {
+  background-color: $dash-green;
+  border-radius: 3px;
+  font-size: $medium-font-size;
+  border: none;
+  color: $text-color-inv;
+  padding: 15px 20px;
+
+  &:hover, &:active, &:focus {
+    background-color: $dark-green;
+    color: $text-color-inv;
+  }
+  &.ghost-button {
+    background-color: transparent;
+    color: $light-blue;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+
+  &.clear {
+    background-color: transparent;
+    padding: 13px 20px;
+    border: 2px solid $medium-blue;
+    &.blue {
+      border-color: $medium-blue;
+      color: $medium-blue;
+      &:hover, &:active, &:focus {
+        background-color: $medium-blue;
+        color: $text-color-inv;
+      }
+    }
+    &.white {
+      border-color: $text-color-inv;
+      color: $text-color-inv;
+      &:hover, &:active, &:focus {
+        border: 2px solid $medium-blue;
+        background-color: $medium-blue;
+      }
+    }
+
+  }
+  &.icon-button {
+    background-color: transparent;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    &.light {
+      i {
+        color: $text-color-inv;
+      }
+    }
+    .no-text {
+      display: inline-block;
+      text-indent: -20000px;
+    }
+  }
+}
+
+/*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
+a, button {
+  &:focus {
+    outline: 2px solid $focus-color;
+  }
+}
+/************************ GLOBAL *******************************/
+
+$default-border: 1px solid $accent-gray;
+
+
+@import 'icomoon';

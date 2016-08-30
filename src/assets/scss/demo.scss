@@ -1,0 +1,115 @@
+@import 'master';
+/*************************************** DEMO STYLES ***************************************/
+.section {
+  margin: 30px 0;
+  &.icons-section {
+    margin-top: 60px;
+  }
+}
+
+.code-snippet {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  color: #008080;
+  font-size: $normal-font-size;
+  border: $default-border;
+  margin-bottom: 30px;
+  background-color: $pale-gray;
+  border: $default-border;
+  padding: 20px;
+  text-align: left;
+  &.h1 {
+    margin-top: -30px;
+  }
+
+  .code-text {
+    color: $dark-gray;
+  }
+
+  .attribute {
+    color: #d14;
+    .variable {
+      color: #870a29;
+    }
+  }
+  .comment {
+    font-size: $small-font-size;
+    color: $text-color;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+}
+
+.color-box {
+  background-color: $dark-blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  color: $white;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  display: block;
+  font-size: $small-font-size;
+  padding-top: 35px;
+  font-family: $source-sans-bold;
+  &.nav-blue {
+    background-color: $nav-blue;
+  }
+  &.dark-blue {
+    background-color: $dark-blue;
+  }
+  &.bg-blue {
+    background-color: $bg-blue;
+  }
+  &.medium-blue {
+    background-color: $medium-blue;
+  }
+  &.light-blue {
+    background-color: $light-blue;
+  }
+  &.dash-green {
+    background-color: $dash-green;
+  }
+  &.dark-green {
+    background-color: $dark-green;
+  }
+  &.dash-red {
+    background-color: $dash-red;
+  }
+  &.dash-yellow {
+    background-color: $dash-yellow;
+  }
+  &.dark-gray {
+    background-color: $dark-gray;
+  }
+  &.accent-gray {
+    background-color: $accent-gray;
+    color: $dark-gray;
+  }
+  &.pale-gray {
+    background-color: $pale-gray;
+    border: $default-border;
+    color: $dark-gray;
+  }
+  &.white {
+    background-color: $white;
+    border: $default-border;
+    color: $dark-gray;
+  }
+  &.text-color-inv {
+    background-color: $text-color-inv;
+    border: $default-border;
+    color: $dark-gray;
+  }
+  &.text-color {
+    background-color: $text-color;
+  }
+  &.focus-color {
+    background-color: $focus-color;
+  }
+}
+
+.demo-icon {
+  display: block;
+  text-align: center;
+}
