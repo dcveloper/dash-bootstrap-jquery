@@ -46,8 +46,8 @@
       border-color: $dark-blue;
       color: $dark-blue;
       &:hover, &:active, &:focus {
-        background-color: $dark-blue;
-        color: $text-color-inv;
+        background-color: $dark-blue !important;
+        color: $text-color-inv !important;
       }
     }
   }
