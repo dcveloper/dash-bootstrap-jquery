@@ -59,3 +59,10 @@ npm-debug.log
 # IDE #
 .idea/
 *.swp
+
+.gitignore
+config.codekit
+src/assets/scss/.sass-cache/
+*scssc
+
+
