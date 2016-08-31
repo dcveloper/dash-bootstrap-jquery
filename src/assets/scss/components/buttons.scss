@@ -1,0 +1,88 @@
+@import '../global';
+
+.btn, button {
+  font-family: $source-sans-semi;
+  background-color: $dash-green;
+  border-radius: 3px;
+  font-size: $medium-font-size;
+  border: none;
+  color: $text-color-inv;
+  padding: 15px 20px;
+
+  &.feature-button {
+    font-size: $medium-font-size;
+    padding: 15px 30px !important;
+  }
+
+  &:hover, &:active, &:focus {
+    background-color: $dark-green;
+    color: $text-color-inv;
+  }
+  &.ghost-button {
+    background-color: transparent;
+    color: $light-blue;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+
+  &.clear {
+    background-color: transparent;
+    padding: 13px 20px;
+    border: 2px solid $medium-blue;
+    &.blue {
+      border-color: $medium-blue;
+      color: $medium-blue;
+      &:hover, &:active, &:focus {
+        background-color: $medium-blue;
+        color: $text-color-inv;
+      }
+    }
+    &.white {
+      border-color: $text-color-inv;
+      color: $text-color-inv;
+      &:hover, &:active, &:focus {
+        color: $text-color;
+        border: 2px solid $white;
+        background-color: $white;
+      }
+    }
+
+  }
+  &.icon-button {
+    background-color: transparent;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    &.light {
+      i {
+        color: $text-color-inv;
+      }
+    }
+    .no-text {
+      display: inline-block;
+      text-indent: $offpage;
+    }
+  }
+  &.icon-button-footer {
+    padding: 0 !important;
+    margin: 0 0 0 40px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    display: inline-block;
+    .no-text {
+      display: inline-block;
+      text-indent: $offpage;
+    }
+  }
+}
+
+/*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
+a, button {
+  &:focus {
+    //outline: 2px solid $focus-color;
+  }
+}

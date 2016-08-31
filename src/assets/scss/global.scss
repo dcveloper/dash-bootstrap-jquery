@@ -1,0 +1,92 @@
+/* FONTS AND TYPE */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'), url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'), url('../fonts/SourceSansPro-Bold.woff') format('woff'), url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+$source-sans-light: 'Source Sans Pro Light', sans-serif;
+$source-sans: 'Source Sans Pro', sans-serif;
+$source-sans-semi: 'Source Sans Pro Semi Bold', sans-serif;
+$source-sans-bold: 'Source Sans Pro Bold', sans-serif;
+
+$small-font-size: 12px;
+$normal-font-size: 14px;
+$medium-font-size: 16px;
+$large-font-size: 18px;
+$xlarge-font-size: 24px;
+$xxlarge-font-size: 36px;
+
+*, body, div, a, span, p, ul, li, strong {
+  font-family: $source-sans;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: $source-sans-light;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $source-sans;
+}
+
+/* Negative offset for text-indent */
+$offpage: -20000px;
+
+/* Colors */
+
+$nav-blue: #0a1e37;
+$dark-blue: #192A44;
+$bg-blue: #0a2c45;
+$medium-blue: #334a6b;
+$light-blue: #00709A;
+$dash-green: #288e50;
+$dark-green: #195731;
+$dash-red: #98452e;
+$dash-yellow: #BFAF26;
+$dark-gray: #333333;
+$accent-gray: #E5E5E5;
+$pale-gray: #f9f9f9;
+$white: #ffffff;
+$text-color-inv: #ffffff;
+$text-color: #666666;
+$focus-color: #00CCCC;
+$off-white: #f5f5f5;
+
+
+/* Icon Fonts */
+
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 48px;
+  color: $text-color;
+  &.small-sz {
+    font-size: 36px;
+  }
+  &.default-sz {
+    font-size: 48px;
+  }
+  &.large-sz {
+    font-size: 64px;
+  }
+}
+
+/* Borders */
+
+$default-border: 1px solid $accent-gray;
