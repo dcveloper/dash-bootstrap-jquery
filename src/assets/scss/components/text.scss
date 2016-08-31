@@ -1,0 +1,28 @@
+@import '../global';
+
+.page-title-container {
+  background: url('../img/treasury-bg.jpg') no-repeat 0 35%;
+  background-size: 100vw;
+  background-color: $bg-blue;
+  width: 100%;
+  display: block;
+  padding: 35px;
+  margin: 0 0 60px;
+  .page-title {
+    font-size: 36px;
+    color: $text-color-inv;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.section-title {
+  font-size: 24px;
+  color: $medium-blue;
+  margin: 0 0 25px;
+}
+
+.page-intro {
+  font-size: $large-font-size;
+  color: $dark-gray;
+}

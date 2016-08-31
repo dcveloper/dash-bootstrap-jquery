@@ -1,0 +1,88 @@
+@import '../global';
+
+.feature-card {
+
+  &.right {
+    .floating-container {
+      float: right;
+    }
+  }
+  &.left {
+    .floating-container {
+      float: left;
+    }
+  }
+  &.blue {
+    background-color: $light-blue;
+    .feature-title {
+      color: $text-color-inv;
+    }
+    .feature-text {
+      color: $text-color-inv;
+      font-size: $large-font-size;
+      margin: 20px 0 30px;
+    }
+    .feature-button {
+      &:hover, &:active, &:focus {
+        color: $light-blue;
+      }
+    }
+  }
+  &.red {
+
+  }
+  &.white {
+    background-color: $off-white;
+    color: $dark-blue;
+    .feature-title {
+      color: $dark-blue;
+    }
+    .feature-text {
+      color: $dark-blue;
+      font-size: $large-font-size;
+      margin: 20px 0 30px;
+    }
+    .feature-button {
+      border-color: $dark-blue;
+      color: $dark-blue;
+      &:hover, &:active, &:focus {
+        background-color: $dark-blue;
+        color: $text-color-inv;
+      }
+    }
+  }
+  .container {
+    //Placeholder for workforce image to be dynamically managed:
+    &.workforce {
+      background: url('../img/workforce-bg.png') no-repeat 0 0;
+    }
+    //Placeholder for dashboard image to be dynamically managed:
+    &.dashboard {
+      background: url('../img/dashboard-bg.png') no-repeat right center;
+    }
+    padding: 100px 0;
+    background-size: cover;
+  }
+  .floating-container {
+    display: inline-block;
+    width: 50%;
+    padding-right: 10%;
+    .feature-title {
+      font-family: $source-sans-light;
+      span {
+        font-family: $source-sans-light;
+      }
+      font-size: $xxlarge-font-size;
+      .sub-title {
+        font-family: $source-sans-light;
+        color: inherit;
+        font-style: italic;
+        font-size: $xxlarge-font-size;
+      }
+    }
+    .feature-text {
+      font-size: $large-font-size;
+      margin: 20px 0 30px;
+    }
+  }
+}
