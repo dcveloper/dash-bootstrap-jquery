@@ -47,6 +47,11 @@ h2, h3, h4, h5, h6 {
   font-family: $source-sans;
 }
 
+.outer-container {
+  width: 100%;
+  height: 100vh;
+}
+
 /* Negative offset for text-indent */
 
 $offpage: -20000px;
