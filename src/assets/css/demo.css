@@ -362,7 +362,7 @@ h2, h3, h4, h5, h6 {
       display: inline-block;
       float: left;
       margin-top: -3px;
-      background: url("../img/dashboards_logo.svg") 0 0 no-repeat;
+      background: url("../img/dashboards_logo.svg") 0 0 no-repeat !important;
       background-size: 323px 35px;
       width: 323px;
       height: 35px;
@@ -550,6 +550,10 @@ h2, h3, h4, h5, h6 {
     background-color: #666666; }
   .color-box.focus-color {
     background-color: #00CCCC; }
+  .color-box.off-white {
+    background-color: #f5f5f5;
+    border: 1px solid #E5E5E5;
+    color: #333333; }
 
 .demo-icon {
   display: block;
