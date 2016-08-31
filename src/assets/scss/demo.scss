@@ -1,4 +1,6 @@
+@import 'global';
 @import 'master';
+
 /*************************************** DEMO STYLES ***************************************/
 .section {
   margin: 30px 0;
@@ -17,6 +19,7 @@
   border: $default-border;
   padding: 20px;
   text-align: left;
+
   &.h1 {
     margin-top: -30px;
   }
@@ -52,6 +55,7 @@
   font-size: $small-font-size;
   padding-top: 35px;
   font-family: $source-sans-bold;
+
   &.nav-blue {
     background-color: $nav-blue;
   }
@@ -106,6 +110,11 @@
   }
   &.focus-color {
     background-color: $focus-color;
+  }
+  &.off-white {
+    background-color: $off-white;
+    border: $default-border;
+    color: $dark-gray;
   }
 }
 

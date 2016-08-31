@@ -1,0 +1,99 @@
+/* FONTS AND TYPE */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../fonts/SourceSansPro-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"); }
+*, body, div, a, span, p, ul, li, strong {
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-family: "Source Sans Pro Light", sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+/* Negative offset for text-indent */
+/* Colors */
+/* Icon Fonts */
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 48px;
+  color: #666666; }
+  [class^="icon-"].small-sz, [class*=" icon-"].small-sz {
+    font-size: 36px; }
+  [class^="icon-"].default-sz, [class*=" icon-"].default-sz {
+    font-size: 48px; }
+  [class^="icon-"].large-sz, [class*=" icon-"].large-sz {
+    font-size: 64px; }
+
+/* Borders */
+.btn, button {
+  font-family: "Source Sans Pro Semi Bold", sans-serif;
+  background-color: #288e50;
+  border-radius: 3px;
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
+  padding: 15px 20px; }
+  .btn.feature-button, button.feature-button {
+    font-size: 16px;
+    padding: 15px 30px !important; }
+  .btn:hover, .btn:active, .btn:focus, button:hover, button:active, button:focus {
+    background-color: #195731;
+    color: #ffffff; }
+  .btn.ghost-button, button.ghost-button {
+    background-color: transparent;
+    color: #00709A; }
+    .btn.ghost-button:hover, .btn.ghost-button:active, .btn.ghost-button:focus, button.ghost-button:hover, button.ghost-button:active, button.ghost-button:focus {
+      background-color: transparent;
+      text-decoration: underline; }
+  .btn.clear, button.clear {
+    background-color: transparent;
+    padding: 13px 20px;
+    border: 2px solid #334a6b; }
+    .btn.clear.blue, button.clear.blue {
+      border-color: #334a6b;
+      color: #334a6b; }
+      .btn.clear.blue:hover, .btn.clear.blue:active, .btn.clear.blue:focus, button.clear.blue:hover, button.clear.blue:active, button.clear.blue:focus {
+        background-color: #334a6b;
+        color: #ffffff; }
+    .btn.clear.white, button.clear.white {
+      border-color: #ffffff;
+      color: #ffffff; }
+      .btn.clear.white:hover, .btn.clear.white:active, .btn.clear.white:focus, button.clear.white:hover, button.clear.white:active, button.clear.white:focus {
+        color: #666666;
+        border: 2px solid #ffffff;
+        background-color: #ffffff; }
+  .btn.icon-button, button.icon-button {
+    background-color: transparent;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 0; }
+    .btn.icon-button.light i, button.icon-button.light i {
+      color: #ffffff; }
+    .btn.icon-button .no-text, button.icon-button .no-text {
+      display: inline-block;
+      text-indent: -20000px; }
+  .btn.icon-button-footer, button.icon-button-footer {
+    padding: 0 !important;
+    margin: 0 0 0 40px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    display: inline-block; }
+    .btn.icon-button-footer .no-text, button.icon-button-footer .no-text {
+      display: inline-block;
+      text-indent: -20000px; }
+
+/*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/

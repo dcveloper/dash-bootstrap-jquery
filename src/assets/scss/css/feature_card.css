@@ -1,0 +1,92 @@
+/* FONTS AND TYPE */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../fonts/SourceSansPro-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"); }
+*, body, div, a, span, p, ul, li, strong {
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-family: "Source Sans Pro Light", sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+/* Negative offset for text-indent */
+/* Colors */
+/* Icon Fonts */
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 48px;
+  color: #666666; }
+  [class^="icon-"].small-sz, [class*=" icon-"].small-sz {
+    font-size: 36px; }
+  [class^="icon-"].default-sz, [class*=" icon-"].default-sz {
+    font-size: 48px; }
+  [class^="icon-"].large-sz, [class*=" icon-"].large-sz {
+    font-size: 64px; }
+
+/* Borders */
+.feature-card.right .floating-container {
+  float: right; }
+.feature-card.left .floating-container {
+  float: left; }
+.feature-card.blue {
+  background-color: #00709A; }
+  .feature-card.blue .feature-title {
+    color: #ffffff; }
+  .feature-card.blue .feature-text {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 20px 0 30px; }
+  .feature-card.blue .feature-button:hover, .feature-card.blue .feature-button:active, .feature-card.blue .feature-button:focus {
+    color: #00709A; }
+.feature-card.white {
+  background-color: #f5f5f5;
+  color: #192A44; }
+  .feature-card.white .feature-title {
+    color: #192A44; }
+  .feature-card.white .feature-text {
+    color: #192A44;
+    font-size: 18px;
+    margin: 20px 0 30px; }
+  .feature-card.white .feature-button {
+    border-color: #192A44;
+    color: #192A44; }
+    .feature-card.white .feature-button:hover, .feature-card.white .feature-button:active, .feature-card.white .feature-button:focus {
+      background-color: #192A44;
+      color: #ffffff; }
+.feature-card .container {
+  padding: 100px 0;
+  background-size: cover; }
+  .feature-card .container.workforce {
+    background: url("../img/workforce-bg.png") no-repeat 0 0; }
+  .feature-card .container.dashboard {
+    background: url("../img/dashboard-bg.png") no-repeat right center; }
+.feature-card .floating-container {
+  display: inline-block;
+  width: 50%;
+  padding-right: 10%; }
+  .feature-card .floating-container .feature-title {
+    font-family: "Source Sans Pro Light", sans-serif;
+    font-size: 36px; }
+    .feature-card .floating-container .feature-title span {
+      font-family: "Source Sans Pro Light", sans-serif; }
+    .feature-card .floating-container .feature-title .sub-title {
+      font-family: "Source Sans Pro Light", sans-serif;
+      color: inherit;
+      font-style: italic;
+      font-size: 36px; }
+  .feature-card .floating-container .feature-text {
+    font-size: 18px;
+    margin: 20px 0 30px; }

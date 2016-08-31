@@ -13,22 +13,54 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "close-icon"
+          "close"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 2,
-        "id": 19,
-        "name": "close-icon",
+        "order": 44,
+        "id": 20,
+        "name": "close",
         "prevSize": 32,
         "code": 59648
       },
       "setIdx": 0,
       "setId": 0,
       "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M512 27.307c-267.378 0-484.693 217.316-484.693 484.693s217.316 484.693 484.693 484.693c267.378 0 484.693-217.316 484.693-484.693s-217.316-484.693-484.693-484.693zM608.711 608.711l-96.711 42.098-248.036 109.227 151.324-344.747 96.711-42.098 248.036-109.227-151.324 344.747z",
+          "M567.751 506.311c0 30.79-24.961 55.751-55.751 55.751s-55.751-24.961-55.751-55.751c0-30.79 24.961-55.751 55.751-55.751s55.751 24.961 55.751 55.751z"
+        ],
+        "attrs": [
+          {},
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "compass"
+        ]
+      },
+      "attrs": [
+        {},
+        {}
+      ],
+      "properties": {
+        "order": 45,
+        "id": 19,
+        "name": "compass",
+        "prevSize": 32,
+        "code": 59649
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -42,22 +74,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "cyber-icon"
+          "cyber"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 3,
+        "order": 46,
         "id": 18,
-        "name": "cyber-icon",
+        "name": "cyber",
         "prevSize": 32,
-        "code": 59649
+        "code": 59650
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 1
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -71,22 +103,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "down-arrow-icon"
+          "down-arrow"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 4,
+        "order": 47,
         "id": 17,
-        "name": "down-arrow-icon",
+        "name": "down-arrow",
         "prevSize": 32,
-        "code": 59650
+        "code": 59651
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 2
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -100,22 +132,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "dropdown-arrow-icon"
+          "dropdown-arrow"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 5,
+        "order": 48,
         "id": 16,
-        "name": "dropdown-arrow-icon",
+        "name": "dropdown-arrow",
         "prevSize": 32,
-        "code": 59651
+        "code": 59652
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -129,22 +161,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "governance-icon"
+          "governance"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 6,
+        "order": 49,
         "id": 15,
-        "name": "governance-icon",
+        "name": "governance",
         "prevSize": 32,
-        "code": 59652
+        "code": 59653
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 4
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -174,7 +206,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "grid-icon"
+          "grid"
         ]
       },
       "attrs": [
@@ -189,15 +221,15 @@
         {}
       ],
       "properties": {
-        "order": 22,
+        "order": 50,
         "id": 14,
-        "name": "grid-icon",
+        "name": "grid",
         "prevSize": 32,
-        "code": 59653
+        "code": 59654
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 5
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -211,22 +243,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "keyword-icon"
+          "keyword"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 14,
+        "order": 51,
         "id": 13,
-        "name": "keyword-icon",
+        "name": "keyword",
         "prevSize": 32,
-        "code": 59654
+        "code": 59655
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 6
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -250,7 +282,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "list-icon"
+          "list"
         ]
       },
       "attrs": [
@@ -262,15 +294,15 @@
         {}
       ],
       "properties": {
-        "order": 15,
+        "order": 52,
         "id": 12,
-        "name": "list-icon",
+        "name": "list",
         "prevSize": 32,
-        "code": 59655
+        "code": 59656
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 7
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -288,7 +320,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "menu-icon"
+          "menu"
         ]
       },
       "attrs": [
@@ -297,15 +329,15 @@
         {}
       ],
       "properties": {
-        "order": 16,
+        "order": 53,
         "id": 11,
-        "name": "menu-icon",
+        "name": "menu",
         "prevSize": 32,
-        "code": 59656
+        "code": 59657
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 8
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -329,7 +361,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "organization-icon"
+          "organization"
         ]
       },
       "attrs": [
@@ -341,15 +373,15 @@
         {}
       ],
       "properties": {
-        "order": 17,
+        "order": 54,
         "id": 10,
-        "name": "organization-icon",
+        "name": "organization",
         "prevSize": 32,
-        "code": 59657
+        "code": 59658
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 9
+      "iconIdx": 10
     },
     {
       "icon": {
@@ -363,22 +395,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "search-alt-icon"
+          "search-alt"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 18,
+        "order": 55,
         "id": 9,
-        "name": "search-alt-icon",
+        "name": "search-alt",
         "prevSize": 32,
-        "code": 59658
+        "code": 59659
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 10
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -392,22 +424,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "search-icon"
+          "search"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 19,
+        "order": 56,
         "id": 8,
-        "name": "search-icon",
+        "name": "search",
         "prevSize": 32,
-        "code": 59659
+        "code": 59660
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 11
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -421,22 +453,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "star-filled-icon"
+          "star-filled"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 20,
+        "order": 57,
         "id": 7,
-        "name": "star-filled-icon",
+        "name": "star-filled",
         "prevSize": 32,
-        "code": 59660
+        "code": 59661
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 12
+      "iconIdx": 13
     },
     {
       "icon": {
@@ -450,22 +482,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "star-outline-icon"
+          "star-outline"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 21,
+        "order": 58,
         "id": 6,
-        "name": "star-outline-icon",
+        "name": "star-outline",
         "prevSize": 32,
-        "code": 59661
+        "code": 59662
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 13
+      "iconIdx": 14
     },
     {
       "icon": {
@@ -479,22 +511,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "sustainability-icon"
+          "sustainability"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 8,
+        "order": 59,
         "id": 5,
-        "name": "sustainability-icon",
+        "name": "sustainability",
         "prevSize": 32,
-        "code": 59662
+        "code": 59663
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 14
+      "iconIdx": 15
     },
     {
       "icon": {
@@ -508,22 +540,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "topic-icon"
+          "topic"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 9,
+        "order": 60,
         "id": 4,
-        "name": "topic-icon",
+        "name": "topic",
         "prevSize": 32,
-        "code": 59663
+        "code": 59664
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 15
+      "iconIdx": 16
     },
     {
       "icon": {
@@ -537,22 +569,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "up-arrow-icon"
+          "up-arrow"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 10,
+        "order": 61,
         "id": 3,
-        "name": "up-arrow-icon",
+        "name": "up-arrow",
         "prevSize": 32,
-        "code": 59664
+        "code": 59665
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 16
+      "iconIdx": 17
     },
     {
       "icon": {
@@ -568,7 +600,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "user-icn"
+          "user"
         ]
       },
       "attrs": [
@@ -576,20 +608,20 @@
         {}
       ],
       "properties": {
-        "order": 11,
+        "order": 62,
         "id": 2,
-        "name": "user-icn",
+        "name": "user",
         "prevSize": 32,
-        "code": 59665
+        "code": 59666
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 17
+      "iconIdx": 18
     },
     {
       "icon": {
         "paths": [
-          "M512 153.6c-197.973 0-358.4 160.427-358.4 358.4s160.427 358.4 358.4 358.4 357.262-160.427 357.262-358.4-160.427-358.4-357.262-358.4zM533.618 730.453c-5.689 6.827-13.653 10.24-22.756 10.24s-17.067-3.413-22.756-10.24c-6.827-4.551-10.24-13.653-10.24-21.618s3.413-17.067 9.102-21.618c13.653-13.653 34.133-12.516 45.511 0 6.827 4.551 10.24 13.653 10.24 21.618s-2.276 14.791-9.102 21.618zM543.858 576.853c0 19.342-15.929 32.996-32.996 32.996s-32.996-15.929-32.996-32.996v-261.689c0-18.204 15.929-31.858 32.996-31.858s32.996 14.791 32.996 31.858v261.689z"
+          "M512 11.378c-276.48 0-500.622 224.142-500.622 500.622s224.142 500.622 500.622 500.622 499.484-224.142 499.484-500.622-224.142-500.622-499.484-500.622zM542.72 816.924c-7.964 9.102-19.342 14.791-31.858 14.791s-23.893-4.551-31.858-14.791c-9.102-6.827-14.791-19.342-14.791-30.72s4.551-23.893 12.516-30.72c19.342-19.342 47.787-17.067 63.716 0 9.102 6.827 14.791 19.342 14.791 30.72s-3.413 21.618-12.516 30.72zM556.373 603.022c0 27.307-22.756 46.649-46.649 46.649s-46.649-22.756-46.649-46.649v-366.364c0-25.031 22.756-44.373 46.649-44.373s46.649 20.48 46.649 44.373v366.364z"
         ],
         "attrs": [
           {}
@@ -598,22 +630,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "warning-icon"
+          "warning"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 12,
+        "order": 63,
         "id": 1,
-        "name": "warning-icon",
+        "name": "warning",
         "prevSize": 32,
-        "code": 59666
+        "code": 59667
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 18
+      "iconIdx": 19
     },
     {
       "icon": {
@@ -627,22 +659,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "workforce-icon"
+          "workforce"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 13,
+        "order": 64,
         "id": 0,
-        "name": "workforce-icon",
+        "name": "workforce",
         "prevSize": 32,
-        "code": 59667
+        "code": 59668
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 19
+      "iconIdx": 20
     }
   ],
   "height": 1024,
@@ -675,7 +707,8 @@
       "png": true,
       "useClassSelector": true,
       "color": 0,
-      "bgColor": 16777215
+      "bgColor": 16777215,
+      "classSelector": ".icon"
     },
     "historySize": 100
   }
