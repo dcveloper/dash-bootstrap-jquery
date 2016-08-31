@@ -3,8 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'about',
-  styles: [`
-  `],
+  styleUrls: [ './about.style.css' ],
   templateUrl:'./about.template.html'
 })
 
@@ -15,9 +14,9 @@ export class About {
   }
 
   ngOnInit() {
-   
+
     console.log('hello `About` component');
-   
+
   }
-  
+
 }

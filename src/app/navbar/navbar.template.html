@@ -8,10 +8,17 @@
         <li><a [routerLink]=" ['./about'] ">About</a></li>
         <li><a [routerLink]=" ['./subscribe'] ">Subscribe</a></li>
         <li>
-          <button class="icon-button light">
-                  <i class="icon-user"></i>
-                  <span class="no-text">My Account</span>
-                </button>
+          <button class="icon-button light btn btn-default dropdown-toggle" type="button" id="account-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <i class="icon-user"></i>
+            <span class="no-text">My Account</span>
+          </button>
+          <!--ul class="dropdown-menu" aria-labelledby="account-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul-->
         </li>
       </ul>
     </div>
