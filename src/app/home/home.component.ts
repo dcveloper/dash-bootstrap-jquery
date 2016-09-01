@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
-
 import { AppState } from '../app.service';
-
 
 @Component({
  
   selector: 'home',  // <home></home> 
-  providers: [
-    
+  providers: [    
   ], 
   directives: [
-    
   ],  
   pipes: [ ],  
   styleUrls: [ './home.style.css' ],
@@ -18,20 +14,14 @@ import { AppState } from '../app.service';
   templateUrl: './home.template.html'
 })
 export class Home {
-  // Set our default values
-  localState = { value: '' };
-  // TypeScript public modifiers
-  constructor(public appState: AppState) {
+  
+  constructor() 
+  {
 
   }
 
   ngOnInit() {
-    console.log('hello `Home` component');
-    // this.title.getData().subscribe(data => this.data = data);
+    console.log('Home::ngOnInit');
+    
   }
-
-  submitState(value) {
-   
-  }
-
 }
