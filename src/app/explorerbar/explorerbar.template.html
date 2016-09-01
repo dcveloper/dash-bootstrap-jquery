@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="input-field col s12">
+    <input id="organization" type="text" class="" 
+    [(ngModel)]=filterQuery
+    (keyup)=filterAfterKeyUp()>
+    <label for="organization">Organization</label>
+  </div>
+  <div class="suggestions" *ngIf="filteredList.length > 0">
+    <ul *ngFor="#item of filteredList">
+      <li>
+        <a (click)="select(item)">{{item}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<br />
