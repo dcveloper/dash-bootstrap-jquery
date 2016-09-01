@@ -9,18 +9,19 @@
 }
 
 .code-snippet {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Courier, monospace !important;
   color: #008080;
-  font-size: $normal-font-size;
+  font-size: $normal-font-size !important;
   border: $default-border;
   margin-bottom: 30px;
   background-color: $pale-gray;
   border: $default-border;
   padding: 20px;
   text-align: left;
-
-  &.h1 {
-    margin-top: -30px;
+  code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace !important;
+    white-space: pre;
+    font-size: $normal-font-size !important;
   }
 
   .code-text {
@@ -34,7 +35,7 @@
     }
   }
   .comment {
-    font-size: $small-font-size;
+    font-size: $small-font-size !important;
     color: $text-color;
     font-style: italic;
     text-transform: uppercase;

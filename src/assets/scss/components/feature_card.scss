@@ -29,7 +29,21 @@
     }
   }
   &.red {
-
+    color: $text-color-inv;
+  }
+  &.home-intro {
+    .container {
+      padding: 30px 0 50px;
+    }
+    .feature-text, .feature-title {
+      color: $text-color-inv;
+    }
+    .feature-text {
+      margin: 30px 0;
+      font-size: $medium-font-size;
+    }
+    background: url('../img/red-bg.jpg') no-repeat center center $bg-red;
+    background-size: 1440px 100%;
   }
   &.white {
     background-color: $off-white;
@@ -60,6 +74,7 @@
     &.dashboard {
       background: url('../img/dashboard-bg.png') no-repeat right center;
     }
+
     padding: 100px 0;
     background-size: cover;
   }
