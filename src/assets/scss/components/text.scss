@@ -16,6 +16,17 @@
   }
 }
 
+home {
+  .page-title-container {
+    margin-bottom: 0;
+    .home-page-title {
+      font-family: $source-sans-light;
+      text-align: center;
+      line-height: 1.0;
+    }
+  }
+}
+
 .section-title {
   font-size: 24px;
   color: $medium-blue;

@@ -3,11 +3,15 @@
 .btn, button {
   font-family: $source-sans-semi;
   background-color: $dash-green;
-  border-radius: 3px;
+  border-radius: $default-border-radius;
   font-size: $medium-font-size;
   border: none;
   color: $text-color-inv;
   padding: 15px 20px;
+
+  i {
+    color: $text-color-inv;
+  }
 
   &.feature-button {
     font-size: $medium-font-size;
@@ -24,6 +28,19 @@
     &:hover, &:active, &:focus {
       background-color: transparent;
       text-decoration: underline;
+    }
+  }
+  &.search-bar-button {
+    font-family: $source-sans;
+    background-color: $white;
+    color: $light-blue;
+    border-radius: 0 !important;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: $normal-font-size !important;
+    &:hover, &:active, &:focus {
+      background-color: $white;
+      text-decoration: none;
     }
   }
 

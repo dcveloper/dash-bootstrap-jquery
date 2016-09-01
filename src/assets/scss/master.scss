@@ -2,14 +2,12 @@
 //@import '../css/bootstrap.min.css';
 @import 'icomoon';
 
-/* GLOBAL STYLES */
-@import 'global';
-
 /* COMPONENT STYLESHEETS */
 @import 'components/buttons';
 @import 'components/feature_card';
 @import 'components/navigation';
 @import 'components/text';
+@import 'components/explorer_bar';
 
 /* DEMO STYLESHEET (STYLE GUIDE) */
 @import 'demo';

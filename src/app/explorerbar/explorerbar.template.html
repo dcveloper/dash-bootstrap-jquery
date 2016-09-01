@@ -1,10 +1,18 @@
-<div class="container">
-  <div class="input-field col s12">
-    <input id="organization" type="text" class="" 
-    [(ngModel)]=filterQuery
-    (keyup)=filterAfterKeyUp()>
-    <label for="organization">Organization</label>
+<div class="container explorer-bar">
+
+
+  <div class="input-group input-group-lg input-field explorer-search-bar-container">
+    <span class="input-group-addon" id="organization-label">Organization Name</span>
+    <input type="text" class="form-control explorer-search-bar" placeholder="" aria-describedby="organization-label" [(ngModel)]=filterQuery
+           (keyup)=filterAfterKeyUp()>
+    <div class="input-group-btn">
+      <button class="btn btn-default search-bar-button" type="button">See full list</button>
+    </div>
+    <span class="input-group-btn">
+        <button class="btn btn-default" aria-label="Search" title="Search" type="button"><i class="icon-search small-sz"></i></button>
+      </span>
   </div>
+
   <div class="suggestions" *ngIf="filteredList.length > 0">
     <ul *ngFor="#item of filteredList">
       <li>
