@@ -20,7 +20,7 @@
       height: 35px;
       text-indent: $offpage;
     }
-    ul {
+    ul.nav-ul {
       list-style: none;
       list-style-type: none;
       background: transparent;
@@ -29,10 +29,14 @@
       display: inline-block;
       float: right;
 
-      li {
+      &> li {
         float: left;
         display: inline;
-        a {
+        &.dropdown {
+          width: 48px;
+          height: 48px;
+        }
+        a  {
           color: $text-color-inv;
           font-size: $large-font-size;
           text-transform: uppercase;
@@ -46,20 +50,35 @@
     }
   }
   //Footer nav
-  .footer-nav {
-    padding: 30px 0 20px;
-    border-radius: 0;
-    margin-bottom: 0;
-    .logo {
-      background-size: 225px 25px;
-      width: 225px;
-      height: 25px;
-    }
-    ul {
-      li {
-        a {
-          color: $accent-gray;
-          font-size: $normal-font-size;
+  &.footer {
+    margin-top: 100px;
+    .footer-nav {
+      padding: 30px 0 20px;
+      border-radius: 0;
+      margin-bottom: 0;
+      .logo {
+        background-size: 225px 25px;
+        width: 225px;
+        height: 25px;
+      }
+      ul {
+        list-style: none;
+        list-style-type: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        float: right;
+        li {
+          float: left;
+          display: inline;
+          a {
+            color: $accent-gray;
+            font-size: $normal-font-size;
+            text-transform: uppercase;
+            display: block;
+            padding: 0 13px;
+          }
         }
       }
     }

@@ -8,7 +8,7 @@
   <title><%= webpackConfig.metadata.title %></title>
 
   <meta name="description" content="<%= webpackConfig.metadata.title %>">
-
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <% if (webpackConfig.htmlElements.headTags) { %>
   <!-- Configured Head Tags  -->
   <%= webpackConfig.htmlElements.headTags %>
@@ -21,17 +21,19 @@
 </head>
 
 <body>
-
+<div class="outer-container">
   <app>
-    <img src="/assets/img/spinner.gif" alt="Loading" />
+    <div class="spinner-container container" style="text-align: center">
+      <img class="spinner" src="/assets/img/spinner.gif" alt="Loading" />
+    </div>
   </app>
 
   <% if (webpackConfig.metadata.isDevServer && webpackConfig.metadata.HMR !== true) { %>
   <!-- Webpack Dev Server reload -->
   <script src="/webpack-dev-server.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
   <% } %>
-
-
+</div>
 </body>
 </html>

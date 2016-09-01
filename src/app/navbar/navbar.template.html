@@ -2,23 +2,23 @@
   <nav class="navbar navbar-default navbar-fixed-top main-nav">
     <div class="container">
       <div class="logo"><a [routerLink]=" ['./'] ">Dash</a></div>
-      <ul>
-        <li><a [routerLink]=" ['./styleguide'] ">Style Guide</a></li>
-        <li><a [routerLink]=" ['./home'] ">Home</a></li>
-        <li><a [routerLink]=" ['./about'] ">About</a></li>
-        <li><a [routerLink]=" ['./subscribe'] ">Subscribe</a></li>
-        <li>
-          <button class="icon-button light btn btn-default dropdown-toggle" type="button" id="account-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+      <ul class="nav-ul">
+        <li class="level1"><a class="level2" [routerLink]=" ['./styleguide'] ">Style Guide</a></li>
+        <li class="level1"><a class="level2" [routerLink]=" ['./home'] ">Home</a></li>
+        <li class="level1"><a class="level2" [routerLink]=" ['./about'] ">About</a></li>
+        <li class="level1"><a class="level2" [routerLink]=" ['./subscribe'] ">Subscribe</a></li>
+
+        <li class="dropdown level1">
+          <button class="icon-button light btn btn-default dropdown-toggle" role="button" id="account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="icon-user"></i>
             <span class="no-text">My Account</span>
           </button>
-          <!--ul class="dropdown-menu" aria-labelledby="account-menu">
+          <ul role="menu" class="dropdown-menu" aria-labelledby="account">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul-->
+          </ul>
         </li>
       </ul>
     </div>
