@@ -1,11 +1,4 @@
-/*
- * Angular 2 decorators and services
- */
 import { Component, ViewEncapsulation,  ViewContainerRef } from '@angular/core';
-
-
-
-
 
 /*
  * App Component
@@ -20,14 +13,13 @@ import { Component, ViewEncapsulation,  ViewContainerRef } from '@angular/core';
   templateUrl: './app.template.html'
 })
 export class App   {
-  now: "Hello World!";
-  name = 'Home Page';
- 
+
   constructor(public viewContainerRef:ViewContainerRef) {
+    //this is needed
     viewContainerRef = viewContainerRef;
   }
 
   ngOnInit() {  
-
+    console.log('App::ngOnInit');
   }
 }
