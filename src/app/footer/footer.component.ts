@@ -15,5 +15,5 @@ export class AppFooter {
     console.log('Footer::ngOnInit');
     
   }
-
+  
 }
