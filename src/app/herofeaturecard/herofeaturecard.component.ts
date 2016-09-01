@@ -17,21 +17,19 @@ import { HeroFeature } from '../models/herofeature';
 export class HeroFeatureCard {
   @Input()
   heroFeature:HeroFeature;
-  
-  //todo remove this
-  public title: string = 'Workforce';
-  public description: string = 'Learn about the insights gathered from this HR-cenetered topic area. Filter results further by organization and keywords to see how your organizations stacks up.';
-  public buttonText: string = 'See the ';
-  public dashboardType: string = ''; // either 'Dashboard' or 'Topic'
 
+  public alignment = 'right'
+  
   constructor() {
-    //set the button text to either 'See the Dashboard' or 'See the Topic' based on feature type
-    this.buttonText += this.dashboardType;
     
 
   }
 
   ngOnInit() {
     console.log('Herofeaturecard::ngOnInit');
+    console.log('this.heroFeature.type:' + this.heroFeature.type);
+    if (this.heroFeature.type == 'Topic') {
+      this.alignment == 'left';
+    }
   }
 }
