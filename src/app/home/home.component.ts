@@ -3,6 +3,7 @@ import { AppState } from '../app.service';
 
 import { HeroFeatureCard } from '../herofeaturecard'
 import { HeroFeature } from '../models/herofeature';
+import { IntroCard } from '../introcard';
 
 @Component({
  
@@ -10,7 +11,8 @@ import { HeroFeature } from '../models/herofeature';
   providers: [    
   ], 
   directives: [
-    HeroFeatureCard
+    HeroFeatureCard,
+    IntroCard
   ],  
   pipes: [ ],  
   styleUrls: [ './home.style.css' ],
