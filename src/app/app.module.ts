@@ -20,6 +20,7 @@ import { NoContent } from './no-content';
 import { Styleguide } from './styleguide';
 import { Subscribe } from './subscribe';
 import { Navbar } from './navbar';
+import { AppFooter } from './footer';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -39,7 +40,8 @@ const APP_PROVIDERS = [
     NoContent,
     Subscribe,
     Styleguide,
-    Navbar
+    Navbar,
+    AppFooter
   ],
   imports: [ // import Angular's modules
     BrowserModule,
