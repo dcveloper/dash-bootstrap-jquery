@@ -1,6 +1,9 @@
 /* 
 End to End test for subscribe component
 Refer to https://docs.angularjs.org/guide/e2e-testing
+
+Run the site (npm start)
+In another console window in the project folder, run e2e test (npm run e2e)
 */
 
 describe('Subscribe e2e', () => {
@@ -11,7 +14,7 @@ describe('Subscribe e2e', () => {
 
   
   it('Subscribe - Does PageTitle Exist?', () => {
-    var pageTitleElem = element(by.css('.page-title'));
+    const pageTitleElem = element(by.css('.page-title'));
     expect(pageTitleElem.isPresent()).toBe(true);
   });
 
