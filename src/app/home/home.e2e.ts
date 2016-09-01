@@ -1,22 +1,23 @@
-describe('App', () => {
+/* 
+End to End test for subscribe component
+Refer to https://docs.angularjs.org/guide/e2e-testing
+
+Run the site (npm start)
+In another console window in the project folder, run e2e test (npm run e2e)
+*/
+
+describe('Home', () => {
 
   beforeEach(() => {
     // change hash depending on router LocationStrategy
     browser.get('/#/home');
   });
 
+  it('Is Page Title Correct?', () => {
 
-  it('should have a title', () => {
     let subject = browser.getTitle();
-    let result  = 'Angular2 Webpack Starter by @gdi2290 from @AngularClass';
+    let result  = 'Dashboards as a Service';
     expect(subject).toEqual(result);
   });
-
-  it('should have `your content here` x-large', () => {
-    let subject = element(by.css('[x-large]')).getText();
-    let result  = 'Your Content Here';
-    expect(subject).toEqual(result);
-  });
-
 
 });
