@@ -29,8 +29,10 @@ $small-font-size: 12px;
 $normal-font-size: 14px;
 $medium-font-size: 16px;
 $large-font-size: 18px;
+$larger-font-size: 20px;
 $xlarge-font-size: 24px;
 $xxlarge-font-size: 36px;
+$xxxlarge-font-size: 48px;
 
 *, body, div, a, span, p, ul, li, strong {
   font-family: $source-sans;
@@ -69,6 +71,8 @@ $dash-red: #98452e;
 $bg-red: #7e3b39;
 $dash-yellow: #BFAF26;
 $dark-gray: #333333;
+$light-gray: #dedede;
+$bg-gray: #ebebeb;
 $accent-gray: #E5E5E5;
 $pale-gray: #f9f9f9;
 $white: #ffffff;
@@ -83,6 +87,12 @@ $off-white: #f5f5f5;
 [class^="icon-"], [class*=" icon-"] {
   font-size: 48px;
   color: $text-color;
+  &.xxsmall-sz {
+    font-size: 18px;
+  }
+  &.xsmall-sz {
+    font-size: 26px;
+  }
   &.small-sz {
     font-size: 36px;
   }
@@ -98,3 +108,14 @@ $off-white: #f5f5f5;
 
 $default-border: 1px solid $accent-gray;
 $default-border-radius: 3px;
+$card-border-radius: 4px;
+
+
+/* Card */
+
+.card {
+  border: solid 1px $light-gray;
+  border-radius: $card-border-radius;
+  background-color: #fff;
+  margin: 0px 0px 20px;
+}

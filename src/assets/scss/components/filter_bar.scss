@@ -1,0 +1,42 @@
+@import '../global';
+
+/************************ FILTER BAR ****************************/
+
+.filter-bar-container {
+  background-color: $light-gray;
+  padding:30px 0px;
+
+  .keyword-search {
+    color: $dark-blue;
+
+      .icon-search {
+        font-size: 32px;
+        color: $dark-blue;
+        vertical-align: middle;
+      }
+  }
+
+  .filter-input {
+    border: none;
+    background: none;
+    padding: 10px 5px;
+    width: 50%;
+    font-size: $normal-font-size;
+    font-family: $source-sans-semi;
+    color: #192A44;
+
+      &::-webkit-input-placeholder {
+         color: $dark-blue;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+         color:  $dark-blue;
+      }
+      &::-moz-placeholder {  /* Firefox 19+ */
+         color:  $dark-blue;
+      }
+      &:-ms-input-placeholder {
+         color:  $dark-blue;  
+      }
+  }
+
+}
