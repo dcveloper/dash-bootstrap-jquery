@@ -1,0 +1,208 @@
+@import '../global';
+
+/************************ KPI CARDS ****************************/
+.dashboard-card-container {
+  padding:45px 0;
+
+  .card-description {
+    clear: both;
+    float: left;
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    font-size: $normal-font-size;
+  }
+
+  .dashboard-card {
+    display: block;
+    cursor: pointer;
+    margin-bottom:0px;
+  }
+
+  .card-heading {
+    padding: 7px 20px;
+    position: relative;
+  }
+
+  .card-topic {
+    font-size:$small-font-size;
+    text-transform: uppercase;
+    font-family: $source-sans-semi;
+    color:$dark-blue;
+    display:inline-block;
+  }
+
+  .topic-icon {
+    vertical-align: sub;
+    color: $light-blue;
+  }
+
+  .card-nav {
+    float:right;
+  }
+
+  .card-status {
+    position: absolute;
+    right: 32px;
+    top: 60px;
+    z-index: 10;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $source-sans-bold;
+    font-size: $small-font-size;
+  }
+
+  .status-indicator {
+    background: $dark-blue;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    line-height: 24px;
+    border: solid 3px $white;
+    margin: 0 auto;
+    padding: 2px;
+
+      i {
+        color:$white;
+        display: inline-block;
+      }
+  }
+
+  .trending-up .status-indicator {
+    background-color: $dash-green;
+  }
+
+  .trending-med .status-indicator {
+    background-color: $dash-yellow;
+
+      i {
+        display:none;
+      }
+  }
+
+  .trending-down .status-indicator {
+    background-color: $dash-red;
+
+    i {
+      transform:rotate(180deg);
+    }
+  }
+
+  .card-visual {
+    height: 170px;
+    background: $bg-gray;
+    position: relative;
+    z-index: 0;
+  }
+
+  .card-visual:after {
+    content:'';
+    font-family: $source-sans-semi;
+    font-size: $medium-font-size;
+    text-align: center;
+    line-height: 142px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: rgba(25,42,68,0.0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    color: $white;
+    text-transform: uppercase;
+    transition: all .45s ease;
+  }
+
+  .card-info {
+    padding:20px 20px 10px;
+    background: #fff;
+    position: relative;
+    border-radius: 0px 0px 4px 4px;
+    transition: all .3s ease;
+  }
+
+  .card-title {
+    font-size: $larger-font-size;
+    font-family: $source-sans-semi;
+    line-height: $larger-font-size;
+    color: $dark-blue;
+  }
+
+  .card-date {
+    font-size: $small-font-size;
+    color: $text-color;
+  }
+
+  .card-actions {
+    opacity: 0;
+    height:0px;
+    margin-top:8px;
+  }
+
+  .card-actions-menu {
+    margin:0;
+    padding:0;
+
+      li {
+        list-style-type: none;
+        float: left;
+      }
+
+  }
+
+  .card-actions a {
+    text-decoration: none;
+  }
+
+  .action-favorite i {
+    color:$dash-yellow;
+  }
+
+
+  .card-options {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    z-index: 10;
+    visibility: hidden;
+    border: 10px solid transparent;
+    transition: visibility 0s ease;
+
+      li {
+        float: left;
+        list-style: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 0 0 12px;
+      }
+  }
+
+  .dashboard-card:hover,
+  .dashboard-card:active,
+  .dashboard-card:focus {
+
+    .card-status {
+      color:$white;
+    }
+
+    .card-visual:after {
+      content:'View Dashboard';
+      background: rgba(25,42,68,0.65);
+    }
+
+    .card-info {
+       transform:translateY(-32px);
+    }
+
+    /* Disabled card actions until feature is ready
+    .card-actions {
+      transition: all .3s ease .1s;
+      opacity: 1;
+      height:auto;
+    }
+    */
+  }
+
+
+}
