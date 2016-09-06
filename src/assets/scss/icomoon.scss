@@ -1,11 +1,12 @@
+/* VERSION 0.1.0 */
+
 @font-face {
   font-family: 'dash-pictorials';
-  src:  url('../fonts/dash-pictorials.eot?7z0yhz');
-  src:  url('../fonts/dash-pictorials.eot?7z0yhz#iefix') format('embedded-opentype'),
-  url('../fonts/dash-pictorials.ttf?7z0yhz') format('truetype'),
-  url('../fonts/dash-pictorials.woff?7z0yhz') format('woff'),
-  url('../fonts/dash-pictorials.svg?7z0yhz#dash-pictorials') format('svg');
-
+  src:  url('../fonts/dash-pictorials.eot?aplgvn');
+  src:  url('../fonts/dash-pictorials.eot?aplgvn#iefix') format('embedded-opentype'),
+  url('../fonts/dash-pictorials.ttf?aplgvn') format('truetype'),
+  url('../fonts/dash-pictorials.woff?aplgvn') format('woff'),
+  url('../fonts/dash-pictorials.svg?aplgvn#dash-pictorials') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,51 +42,65 @@
   content: "\e904";
 }
 .icon-governance:before {
-  content: "\e905";
-}
-.icon-grid:before {
   content: "\e906";
 }
-.icon-keyword:before {
+.icon-grid:before {
   content: "\e907";
 }
-.icon-list:before {
+.icon-keyword:before {
   content: "\e908";
 }
-.icon-menu:before {
+.icon-list:before {
   content: "\e909";
 }
-.icon-organization:before {
+.icon-menu:before {
   content: "\e90a";
 }
-.icon-search-alt:before {
+.icon-organization:before {
   content: "\e90b";
 }
-.icon-search:before {
+.icon-search-alt:before {
   content: "\e90c";
 }
-.icon-star-filled:before {
+.icon-search:before {
   content: "\e90d";
 }
-.icon-star-outline:before {
-  content: "\e90e";
-}
-.icon-sustainability:before {
+.icon-star-filled:before {
   content: "\e90f";
 }
-.icon-topic:before {
+.icon-star-outline:before {
   content: "\e910";
 }
-.icon-up-arrow:before {
+.icon-sustainability:before {
   content: "\e911";
 }
-.icon-user:before {
+.icon-topic:before {
   content: "\e912";
 }
-.icon-warning:before {
-  content: "\e913";
-}
-.icon-workforce:before {
+.icon-up-arrow:before {
   content: "\e914";
 }
+.icon-user:before {
+  content: "\e915";
+}
+.icon-warning:before {
+  content: "\e916";
+}
+.icon-workforce:before {
+  content: "\e917";
+}
+.icon-edit:before {
+  content: "\e905";
+}
+.icon-share:before {
+  content: "\e90e";
+}
+.icon-trash:before {
+  content: "\e913";
+}
+.icon-ellipsis:before {
+  content: "\e918";
+}
+
+
 
