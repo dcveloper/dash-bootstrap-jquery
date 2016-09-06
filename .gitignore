@@ -56,12 +56,13 @@ npm-debug.log
 # Doc #
 /doc/
 
-# IDE #
+# DEV ENVIRONMENT #
 .idea/
 *.swp
-
 .gitignore
 config.codekit
+
+# SASS CACHE #
 src/assets/scss/.sass-cache/
 *scssc
 
