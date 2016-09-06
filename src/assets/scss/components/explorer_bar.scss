@@ -1,22 +1,86 @@
 @import '../global';
 .explorer-bar {
-  .explorer-search-bar-container {
-    margin: 30px 0;
-    .input-group-addon {
-      height: 44px;
-      border-radius: $default-border-radius 0 0 $default-border-radius;
-    }
-    .explorer-search-bar {
-      height: 64px;
-      border: none;
-    }
-    .input-group-btn {
-      .btn {
-        height: 64px;
 
-        padding: 10px 20px;
-        border-radius: 0 $default-border-radius $default-border-radius 0;
+  .explore-tabs {
+    li {
+      a {
+        padding: 5px 15px;
+        vertical-align: middle;
+        background-color: rgba(255,255,255,0.2);
+        border: none;
+        font-size: $large-font-size;
+        color: $text-color-inv;
+        margin: 0 1px;
+        &:hover, &:active &:focus {
+          background-color: rgba(255,255,255,0.5);
+        }
+        &#organization-tab {
+          margin-left: 0;
+        }
+        &#mission-tab {
+          margin-right: 0;
+        }
+        i {
+          color: inherit;
+        }
+        .explore-tab-label {
+          color: inherit;
+          position: relative;
+          top: -10px;
+        }
+      }
+    }
+    li.active {
+      a {
+        background-color: rgba(255,255,255,1.0);
+        color: $dark-blue;
       }
     }
   }
+
+  .explore-bar-content {
+    margin: 0;
+    padding: 50px;
+    background-color: $white;
+    .explorer-search-bar-container {
+      .input-group-addon {
+        border: $default-border;
+        border-right: 0;
+        height: 44px;
+        border-radius: $default-border-radius 0 0 $default-border-radius;
+        background-color: $accent-gray;
+      }
+      input {
+        border: $default-border;
+        border-left: 0;
+        border-right: 0;
+      }
+      .explorer-search-bar {
+        height: 64px;
+        border: $default-border;
+        border-left: 0;
+        border-right: 0;
+        box-shadow: none;
+      }
+      .input-group-btn {
+        .btn {
+          height: 64px;
+          padding: 10px 20px;
+          border-radius: 0 $default-border-radius $default-border-radius 0;
+        }
+        .search-bar-button {
+          border: $default-border;
+          border-left: 0;
+          border-right: 0;
+        }
+        .submit-btn {
+          border-color: $dash-green;
+          &:hover, &:focus, &:active {
+            border-color: $dark-green;
+          }
+        }
+      }
+    }
+  }
+
 }
