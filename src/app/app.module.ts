@@ -22,6 +22,8 @@ import { Subscribe } from './subscribe';
 import { Navbar } from './navbar';
 import { AppFooter } from './footer';
 import { Explorerbar } from './explorerbar';
+import { Kpicard } from './kpicard';
+import { Dashboardcard } from './dashboardcard';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -43,7 +45,9 @@ const APP_PROVIDERS = [
     Styleguide,
     Navbar,
     AppFooter,
-    Explorerbar
+    Explorerbar,
+    Kpicard,
+    Dashboardcard
   ],
   imports: [ // import Angular's modules
     BrowserModule,
