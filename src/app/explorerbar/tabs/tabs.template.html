@@ -1,11 +1,11 @@
 <ul class="nav nav-tabs nav-justified explore-tabs" role="tablist">
   <li *ngFor="let tab of tabs" (click)="selectTab(tab)" role="presentation" [ngClass]="{'active': tab.isActive }">
-    <a href="#" id="organization-tab" aria-controls="organization-explore-tab" role="tab" data-toggle="tab">
+    <a href="#" id="{{tab.tabTitle | lowercase}}-tab" aria-controls="organization-explore-tab" role="tab" data-toggle="tab">
       <i class="{{tab.tabIcon}} small-sz"></i>
       <span class="explore-tab-label">{{tab.tabTitle}}</span>
     </a>
   </li>
 </ul>
 <div class="explore-bar-content tab-content">
-  <ng-content></ng-content>  
+  <ng-content></ng-content>
 </div>
