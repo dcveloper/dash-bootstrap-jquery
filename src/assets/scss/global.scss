@@ -87,6 +87,9 @@ $off-white: #f5f5f5;
 [class^="icon-"], [class*=" icon-"] {
   font-size: 48px;
   color: $text-color;
+  &.xxxsmall-sz {
+    font-size: 12px;
+  }
   &.xxsmall-sz {
     font-size: 18px;
   }

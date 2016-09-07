@@ -35,8 +35,29 @@
          color:  $dark-blue;
       }
       &:-ms-input-placeholder {
-         color:  $dark-blue;  
+         color:  $dark-blue;
       }
+  }
+
+  .filter-dropdowns button,
+  .filter-dropdowns button:active,
+  .filter-dropdowns button:hover,
+  .filter-dropdowns button:focus {
+      background:none;
+      color: $dark-blue;
+      text-transform:uppercase;
+      font-size:$normal-font-size;
+      padding:10px 16px;
+  }
+
+  .filter-dropdowns ul.nav li:last-child button {
+    padding-right:0px;
+  }
+
+
+  .filter-dropdowns button i {
+      color:$dark-blue;
+      vertical-align: middle;
   }
 
 }
