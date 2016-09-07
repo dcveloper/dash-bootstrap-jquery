@@ -1,8 +1,10 @@
 import { Component, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Tab, Tabs } from './tabs'
 
 @Component({
   selector: 'explorerbar',
+  directives: [Tab, Tabs],
   styleUrls: ['./explorerbar.style.css'],
   templateUrl: './explorerbar.template.html',
   host: {
