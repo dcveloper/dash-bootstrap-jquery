@@ -1,29 +1,12 @@
 <div class="container explorer-bar">
-  <ul class="nav nav-tabs nav-justified explore-tabs" role="tablist">
-    <li role="presentation" class="active">
-      <a href="organization-explore-tab" id="organization-tab" aria-controls="organization-explore-tab" role="tab" data-toggle="tab">
-        <i class="icon-organization small-sz"></i>
-        <span class="explore-tab-label">Organization</span>
-      </a>
-    </li>
-    <li role="presentation">
-      <a href="topic-explore-tab" id="topic-tab" aria-controls="topic-explore-tab" role="tab" data-toggle="tab">
-        <i class="icon-topic small-sz"></i>
-        <span class="explore-tab-label">Topic</span>
-      </a>
-    <li role="presentation">
-      <a href="mission-explore-tab" id="mission-tab" aria-controls="mission-explore-tab" role="tab" data-toggle="tab">
-        <i class="icon-compass small-sz"></i>
-        <span class="explore-tab-label">Mission</span>
-      </a>
-    </li>
-  </ul>
-  <div class="explore-bar-content tab-content">
-    <div class="tab-pane active" id="organization-explore-tab" role="tabpanel">
-      <div class="input-group input-group-lg input-field explorer-search-bar-container">
+
+  <tabs>
+    <tab tabTitle="Organization" tabIcon="icon-organization">
+
+      <div class="input-group input-group-lg input-field explorer-search-bar-container ">
         <span class="input-group-addon" id="organization-label">Organization Name</span>
         <input type="text" class="form-control explorer-search-bar" placeholder="" aria-describedby="organization-label" [(ngModel)]=filterQuery
-               (keyup)=filterAfterKeyUp()>
+          (keyup)=filterAfterKeyUp()>
         <div class="input-group-btn">
           <button class="btn btn-default search-bar-button" type="button">See full list</button>
         </div>
@@ -31,10 +14,20 @@
         <button class="btn btn-default submit-btn" aria-label="Search" title="Search" type="button"><i class="icon-search small-sz"></i></button>
       </span>
       </div>
-    </div>
-    <div class="tab-pane" id="topic-explore-tab" role="tabpanel"></div>
-    <div class="tab-pane" id="mission-explore-tab" role="tabpanel"></div>
-  </div>
+
+    </tab>
+    <tab tabTitle="TopicBar" tabIcon="icon-topic">
+      <div class="input-group input-group-lg input-field explorer-search-bar-container">
+        Topic Content
+      </div>
+    </tab>
+    <tab tabTitle="Mission" tabIcon="icon-compass">
+      <div class="input-group input-group-lg input-field explorer-search-bar-container">
+        Mission Content
+      </div>
+    </tab>
+
+  </tabs>
 
   <div class="suggestions" *ngIf="filteredList.length > 0">
     <ul *ngFor="let item of filteredList">
@@ -43,5 +36,8 @@
       </li>
     </ul>
   </div>
+
+
+
 </div>
 <br />
