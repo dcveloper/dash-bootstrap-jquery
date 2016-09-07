@@ -3,7 +3,7 @@
 /************************ FILTER BAR ****************************/
 
 .filter-bar-container {
-  background-color: $light-gray;
+  background-color: $bg-gray;
   padding:30px 0px;
 
   .keyword-search {
@@ -38,6 +38,11 @@
          color:  $dark-blue;
       }
   }
+
+  .filter-dropdowns .nav > li {
+      float:left;
+    }
+
 
   .filter-dropdowns button,
   .filter-dropdowns button:active,
