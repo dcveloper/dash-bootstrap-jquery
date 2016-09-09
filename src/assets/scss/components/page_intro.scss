@@ -1,0 +1,72 @@
+@import '../global';
+
+/************************ PAGE INTRO ****************************/
+.page-intro-container {
+  background: $white;
+  padding:50px 0 60px;
+
+  .intro-img {
+     padding: 0px;
+
+    .cropped-circle {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+
+        img {
+          display: inline;
+          margin: 0 auto;
+          height: 100%;
+          width: auto;
+        }
+
+      }
+
+      .intro-img-heading {
+        font-family: $source-sans-semi;
+        font-size: $large-font-size;
+        margin-bottom: 1px;
+      }
+
+    }
+
+    .intro-text {
+      padding-left: 0px;
+      padding-right: 30px;
+    }
+
+    .taxonomy-heading {
+      font-size: $small-font-size;
+      font-family: $source-sans-semi;
+      text-transform: uppercase;
+      color:$dark-gray;
+      margin:0px 0px 20px;
+    }
+
+    .taxonomy-list {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+        li {
+          margin-bottom: 10px;
+          color: $medium-gray;
+          font-family: $source-sans-semi;
+
+          &.selected {
+            color: $light-blue;
+
+            &:before {
+              position: absolute;
+              margin-left: -15px;
+              content:'\2713';
+              color: $dash-green;
+            }
+          }
+
+        }
+    }
+
+}

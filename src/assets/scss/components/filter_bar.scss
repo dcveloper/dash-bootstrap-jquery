@@ -3,7 +3,7 @@
 /************************ FILTER BAR ****************************/
 
 .filter-bar-container {
-  background-color: $light-gray;
+  background-color: $bg-gray;
   padding:30px 0px;
 
   .keyword-search {
@@ -35,8 +35,29 @@
          color:  $dark-blue;
       }
       &:-ms-input-placeholder {
-         color:  $dark-blue;  
+         color:  $dark-blue;
       }
+  }
+
+  .filter-dropdowns .nav > li {
+      float:left;
+    }
+
+
+  .filter-dropdowns button,
+  .filter-dropdowns button:active,
+  .filter-dropdowns button:hover,
+  .filter-dropdowns button:focus {
+      background:none;
+      color: $dark-blue;
+      text-transform:uppercase;
+      font-size:$normal-font-size;
+      padding:10px 16px;
+  }
+
+  .filter-dropdowns button i {
+      color:$dark-blue;
+      vertical-align: middle;
   }
 
 }

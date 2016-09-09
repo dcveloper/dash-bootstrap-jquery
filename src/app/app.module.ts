@@ -25,7 +25,8 @@ import { Explorerbar } from './explorerbar';
 import { Kpicard } from './kpicard';
 import { Dashboardcard } from './dashboardcard';
 import { Filterbar } from './filterbar';
-import { Tab, Tabs } from './explorerbar/tabs'
+import { Tab, Tabs } from './explorerbar/tabs';
+import { PageIntro } from './pageintro';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -51,8 +52,9 @@ const APP_PROVIDERS = [
     Kpicard,
     Dashboardcard,
     Filterbar,
-    Tab, 
-    Tabs
+    Tab,
+    Tabs,
+    PageIntro
   ],
   imports: [ // import Angular's modules
     BrowserModule,
