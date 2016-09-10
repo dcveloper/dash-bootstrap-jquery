@@ -83,4 +83,31 @@
     }
   }
 
+  /* AUTO COMPLETE */
+  .suggestions {
+    background-color: $white;
+    margin: 10px 125px 10px 228px;
+    position: relative;
+    top: -61px;
+    border: $default-border;
+    border-radius: 0px 0px 3px 3px;
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+        display: block;
+        a {
+          display: block;
+          padding: 10px 20px;
+          &:hover, &:focus {
+            background-color: $accent-gray;
+            cursor: pointer;
+            border-left: 3px solid $light-blue;
+            padding-left: 17px;
+          }
+        }
+      }
+    }
+  }
+
 }
