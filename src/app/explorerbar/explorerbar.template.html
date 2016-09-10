@@ -7,9 +7,21 @@
         <span class="input-group-addon" id="organization-label">Organization Name</span>
         <input type="text" class="form-control explorer-search-bar" placeholder="" aria-describedby="organization-label" [(ngModel)]=filterQuery
           (keyup)=filterAfterKeyUp()>
-        <div class="input-group-btn">
-          <button class="btn btn-default search-bar-button" type="button">See full list</button>
+        <div class="input-group-btn dropdown level1">
+          <button class="btn btn-default search-bar-button dropdown-toggle" type="button" role="button" id="org-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">See full list</button>
+          <ul role="menu" class="dropdown-menu dropdown-tooltip" aria-labelledby="org-list">
+            <li>
+              <ul>
+                <li class="list-title">U.S. Department of the Treasury</li>
+                <li><a href="#">OCIO</a></li>
+                <li><a href="#">EBS</a></li>
+                <li><a href="#">OFAC</a></li>
+                <li><a href="#">HRConnect</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+
         <span class="input-group-btn">
         <button class="btn btn-default submit-btn" aria-label="Search" title="Search" type="button"><i class="icon-search small-sz"></i></button>
       </span>
