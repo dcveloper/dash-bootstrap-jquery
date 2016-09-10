@@ -123,3 +123,15 @@ $card-border-radius: 4px;
   background-color: #fff;
   margin: 0px 0px 20px;
 }
+
+
+@mixin daas-clearfix {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+}

@@ -42,7 +42,11 @@
     margin: 0;
     padding: 50px;
     background-color: $white;
+
     .explorer-search-bar-container {
+      width: 100%;
+
+      /*ORGANIZATION TAB*/
       .input-group-addon {
         border: $default-border;
         border-right: 0;
@@ -80,6 +84,44 @@
           }
         }
       }
+
+      /*TOPICS TAB*/
+      .topic-navigation {
+        display: table !important;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+        li {
+          list-style-type: none;
+          display: inline-block;
+          float: left;
+          margin: 0 20px;
+          a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            i {
+              display: block;
+              color: $light-blue;
+            }
+            span {
+              color: $dark-blue;
+              text-decoration: none;
+              font-size: $large-font-size;
+            }
+            &:hover, &:focus, &:active {
+              i {
+                color: $dark-blue;
+              }
+              span {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        @include daas-clearfix;
+      }
+
     }
   }
 
