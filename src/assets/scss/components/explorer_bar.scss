@@ -81,6 +81,97 @@
         }
       }
     }
+
+    .taxonomy-heading {
+      margin:0px;
+      font-size: $medium-font-size;
+      font-family: $source-sans-bold;
+      text-transform: uppercase;
+    }
+
+    .taxonomy-list, .organization-list {
+      list-style-type: none;
+      padding: 0px;
+
+      li {
+        font-size: $medium-font-size;
+        padding:2px 0;
+
+        a {
+          font-family: $source-sans-semi;
+        }
+      }
+    }
+
+    .taxonomy-list li {
+      padding: 10px;
+      border-bottom: solid 1px $light-gray;
+      width:95%;
+      font-family: $source-sans-semi;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      &.selected {
+        background-color: $medium-blue;
+        color: $white;
+        position: relative;
+      }
+      &.selected:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -21px;
+        top: 0px;
+        width: 0;
+        height: 0;
+        border-top: 21px solid transparent;
+        border-bottom: 21px solid transparent;
+        border-left: 21px solid $medium-blue;
+      }
+      &.selected a {
+        color: $white;
+      }
+    }
+
+    .goal-selected {
+      margin-top: 30px;
+      width: 36.3333%;
+
+      &:after {
+        content: '';
+        height: 135%;
+        max-height: 180px;
+        display: block;
+        background: $light-gray;
+        width: 1px;
+        position: absolute;
+        right: 0px;
+        top: -10px;
+      }
+    }
+
+    .goal-heading {
+      font-size: $normal-font-size;
+      font-family: $source-sans-bold;
+      text-transform: uppercase;
+    }
+
+    .goal-text {
+      font-size: $large-font-size;
+    }
+
+    .goal-info-link {
+      font-size: $medium-font-size;
+      font-family: $source-sans-semi;
+    }
+
+    .goal-info {
+        margin-top: 30px;
+        padding-left: 30px;
+        width:30.3333%
+    }
+
   }
 
 }
