@@ -1,3 +1,4 @@
+@import '../global';
 /* CONTAINS STYLES FOR MAIN NAV AND FOOTER */
 
 .nav-container {
@@ -48,10 +49,14 @@
         }
         button {
           margin-top: -13px;
+          &:focus, &:hover, &:active {
+            background-color: transparent !important;
+          }
         }
       }
     }
   }
+
   //Footer nav
   &.footer {
     .footer-nav {
